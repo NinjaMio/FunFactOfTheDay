@@ -1,0 +1,10 @@
+<br />
+<div class="booyah-box col-10 offset-1">
+  <h1>Enter Your Fun Fact</h1>
+  <%= simple_form_for @funfact do |f| %>
+    <%= f.input :fact %>
+    <%= f.input :author %>
+    <br />
+    <%= f.submit 'Create', class: 'btn btn-danger' %>
+  <% end %>
+</div>

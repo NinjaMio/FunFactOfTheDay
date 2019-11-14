@@ -1,1 +1,17 @@
-<h1>Welcome to Fun Fact of the Day!</h1>
+</br>
+<div class="booyah-box col-10 offset-1 text-center">
+  <h1>Welcome to Fun Fact of the Day!</h1>
+  </br>
+  <%= link_to "Contribute Today's Fun Fact", new_funfact_path, class: "btn btn-primary" %>
+  </br>
+  </br>
+</div>
+<div class="booyah-box col-10 offset-1">
+  <% if @funfact.present? %>
+    <h2 class="fact"><%= @funfact.fact %></h2>
+    <h2 class="float-right author">- <%= @funfact.author %></h2>
+    <br class="clear" />
+  <% else %>
+    <h2>No one contributed for today, start with your first one!<h2>
+  <% end %>  
+</div>

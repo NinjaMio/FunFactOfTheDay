@@ -1,7 +1,31 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
 
 h1 {
   font-family: 'ZCOOL KuaiLe', cursive;
+  font-weight: 800;
   color: #DED81F;
+}
+
+.clear {
+  clear: both;
+}
+
+h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: -1.5px;
+}
+
+
+.author {
+  margin-right: 190px;
+}
+
+.fact{    
+    padding-right: 190px;
+    display: inline-block;
+    width: 100%;
+    font-size: 36px;
 }
